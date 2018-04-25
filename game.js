@@ -122,11 +122,11 @@ var render = function () {
 
 	// Score
 	ctx.fillStyle = "rgb(250, 250, 250)";
-	ctx.font = "18px Impact";
+	ctx.font = "20px Impact";
 	ctx.textAlign = "left";
 	ctx.textBaseline = "top";
     ctx.fillText("Bugs Smashed: " + bugsClicked, 32, 32);
-    ctx.font = "12px Impact";
+    ctx.font = "16px Impact";
     ctx.fillText("Press R to reset speed and score", 32, 64);
 };
 
