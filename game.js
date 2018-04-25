@@ -73,10 +73,10 @@ function reset() {
   {
     var mousePos = getMousePos(canvas, evt);
     if (
-		mousePos.x <= (bug.x + 32)
-		&& bug.x <= (mousePos.x + 32)
-		&& mousePos.y <= (bug.y + 32)
-		&& bug.y <= (mousePos.y + 32)
+		mousePos.x <= (bug.x + 64)
+		&& bug.x <= (mousePos.x + 64)
+		&& mousePos.y <= (bug.y + 64)
+		&& bug.y <= (mousePos.y + 64)
 	) {
         ++bugsClicked;
         reset = 0;
@@ -122,10 +122,11 @@ var render = function () {
 
 	// Score
 	ctx.fillStyle = "rgb(250, 250, 250)";
-	ctx.font = "24px Impact";
+	ctx.font = "18px Impact";
 	ctx.textAlign = "left";
 	ctx.textBaseline = "top";
     ctx.fillText("Bugs Smashed: " + bugsClicked, 32, 32);
+    ctx.font = "12px Impact";
     ctx.fillText("Press R to reset speed and score", 32, 64);
 };
 
