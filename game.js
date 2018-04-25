@@ -14,7 +14,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
 	bgReady = true;
 };
-bgImage.src = "../Images/background.png";
+bgImage.src = "Images/background.png";
 
 /* // Hero image
 var heroReady = false;
