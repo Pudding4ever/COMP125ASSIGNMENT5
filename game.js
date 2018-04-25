@@ -79,7 +79,7 @@ function reset() {
 		&& bug.y <= (mousePos.y + 64)
 	) {
         ++bugsClicked;
-        reset = 0;
+        resetticker = 0;
         resettime = resettime / 1.05;
 		var reset = function () {
             bug.x = 32 + (Math.random() * (canvas.width - 64));
