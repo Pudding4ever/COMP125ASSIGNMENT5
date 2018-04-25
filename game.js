@@ -91,7 +91,11 @@ function reset() {
 
 // Update game objects
 var update = function (modifier) {
-console.log(resetticker);
+
+    if (82 in keysDown) { // Player holding R
+        bugsClicked = 0;
+        resettime = 500;
+	}
     resetticker++;
     if (resetticker >= resettime)
     {
